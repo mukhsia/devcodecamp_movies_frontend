@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NewMovieForm = ({}) => {
+const NewMovieForm = ({ onNewMovie }) => {
     const [title, setTitle] = useState("");
     const [runningTime, setRunningTime] = useState("");
     const [genre, setGenre] = useState("");
@@ -13,6 +13,8 @@ const NewMovieForm = ({}) => {
             runningTime,
             genre,
         };
+
+        onNewMovie(formData);
     };
 
     return (
