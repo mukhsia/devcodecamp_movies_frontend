@@ -3,7 +3,7 @@ const MovieList = ({}) => {
   const movieItems = movies.map((movie) => <div>{movie}</div>);
 
   return (
-    <div>
+    <div className="flex-item">
       <h4>My Movies</h4>
       <div>{movieItems}</div>
     </div>
